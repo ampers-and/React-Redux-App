@@ -12,7 +12,7 @@ export const accioSpell = () => dispatch => {
             console.log(res.data);
             const response = res.data[Math.floor(Math.random() * 152)];
             console.log(response);
-            dispatch({ type: ACCIO_SPELL_SUCCESS, payload: response.spell})
+            dispatch({ type: ACCIO_SPELL_SUCCESS, payload: response})
         })
         .catch(err => {
             console.log(err);
